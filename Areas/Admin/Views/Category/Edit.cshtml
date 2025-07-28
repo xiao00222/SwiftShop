@@ -1,0 +1,38 @@
+﻿@model Category
+<div class="card shadow border-2 mt-4">
+    <div class="card-header bg-primary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Update Category</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="border p-3">
+            <form method="post" asp-controller="Category" asp-action="Edit">
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Name" type="text"  class="form-control border-0 shadow" />
+                    <label asp-for="Name" class="form-label ms-2"></label>
+                </div>
+
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="DisplayOrder" type="text" class="form-control border-0 shadow" />
+                    <label asp-for="DisplayOrder" class="form-label ms-2"></label>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-primary form-control mt-3">Update</button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-controller="Category" asp-action="Index" class="btn btn-outline-secondary form-control mt-3">Go Back</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

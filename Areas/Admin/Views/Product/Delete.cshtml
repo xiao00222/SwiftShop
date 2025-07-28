@@ -1,0 +1,65 @@
+﻿@model Product
+
+<div class="card shadow border-2 mt-4">
+    <div class="card-header bg-danger bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Delete Product</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body p-4">
+        <form method="post" asp-controller="Product" asp-action="Delete">
+
+            <div class="form-floating py-2 col-12">
+                <input asp-for="Title" type="text" class="form-control border-0 shadow" />
+                <label asp-for="Title" class="form-label ms-2"></label>
+                <span asp-validation-for="Title" class="text-danger d-block" style="min-height: 20px;"></span>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Description" type="text" class="form-control border-0 shadow" />
+                    <label asp-for="Description" class="form-label ms-2"></label>
+                    <span asp-validation-for="Description" class="text-danger d-block" style="min-height: 20px;"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="ISBN" type="text" class="form-control border-0 shadow" />
+                    <label asp-for="ISBN" class="form-label ms-2"></label>
+                    <span asp-validation-for="ISBN" class="text-danger d-block" style="min-height: 20px;"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Author" type="text" class="form-control border-0 shadow" />
+                    <label asp-for="Author" class="form-label ms-2"></label>
+                    <span asp-validation-for="Author" class="text-danger d-block" style="min-height: 20px;"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="ListPrice" type="text" class="form-control border-0 shadow" />
+                    <label asp-for="ListPrice" class="form-label ms-2"></label>
+                    <span asp-validation-for="ListPrice" class="text-danger d-block" style="min-height: 20px;"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Price" type="text" class="form-control border-0 shadow" />
+                    <label asp-for="Price" class="form-label ms-2"></label>
+                    <span asp-validation-for="Price" class="text-danger d-block" style="min-height: 20px;"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Price50" type="text" class="form-control border-0 shadow" />
+                    <label asp-for="Price50" class="form-label ms-2"></label>
+                    <span asp-validation-for="Price50" class="text-danger d-block" style="min-height: 20px;"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Price100" type="text" class="form-control border-0 shadow" />
+                    <label asp-for="Price100" class="form-label ms-2"></label>
+                    <span asp-validation-for="Price100" class="text-danger d-block" style="min-height: 20px;"></span>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-danger form-control mt-3">Delete</button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary form-control mt-3">Go Back</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
