@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Compile Remove="Migrations\**" />
+    <Compile Remove="Models\**" />
+    <Compile Remove="SwiftShop.DataAccess\**" />
+    <Compile Remove="SwiftShop.Models\**" />
+    <Compile Remove="Swiftshop.Utility\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="Migrations\**" />
+    <Content Remove="Models\**" />
+    <Content Remove="SwiftShop.DataAccess\**" />
+    <Content Remove="SwiftShop.Models\**" />
+    <Content Remove="Swiftshop.Utility\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="SwiftShop.DataAccess\**" />
+    <EmbeddedResource Remove="SwiftShop.Models\**" />
+    <EmbeddedResource Remove="Swiftshop.Utility\**" />
+    <None Remove="Data\**" />
+    <None Remove="Migrations\**" />
+    <None Remove="Models\**" />
+    <None Remove="SwiftShop.DataAccess\**" />
+    <None Remove="SwiftShop.Models\**" />
+    <None Remove="Swiftshop.Utility\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql" Version="9.0.4" />
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="SwiftShop.DataAccess\SwiftShop.DataAccess.csproj" />
+    <ProjectReference Include="SwiftShop.Models\SwiftShop.Models.csproj" />
+    <ProjectReference Include="Swiftshop.Utility\Swiftshop.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

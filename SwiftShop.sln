@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftShop", "SwiftShop.csproj", "{1A9D1AFE-AE83-4297-83F7-5FFDF06B463F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftShop.DataAccess", "SwiftShop.DataAccess\SwiftShop.DataAccess.csproj", "{E1A80CD9-F900-8E61-E6FB-1F13A4A921C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftShop.Models", "SwiftShop.Models\SwiftShop.Models.csproj", "{B1363BB1-431E-DCDF-B18B-055BA1C6874E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swiftshop.Utility", "Swiftshop.Utility\Swiftshop.Utility.csproj", "{B4FD462B-D79E-1473-6236-C12DB834BFBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A9D1AFE-AE83-4297-83F7-5FFDF06B463F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9D1AFE-AE83-4297-83F7-5FFDF06B463F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9D1AFE-AE83-4297-83F7-5FFDF06B463F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9D1AFE-AE83-4297-83F7-5FFDF06B463F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A80CD9-F900-8E61-E6FB-1F13A4A921C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A80CD9-F900-8E61-E6FB-1F13A4A921C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A80CD9-F900-8E61-E6FB-1F13A4A921C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A80CD9-F900-8E61-E6FB-1F13A4A921C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1363BB1-431E-DCDF-B18B-055BA1C6874E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1363BB1-431E-DCDF-B18B-055BA1C6874E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1363BB1-431E-DCDF-B18B-055BA1C6874E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1363BB1-431E-DCDF-B18B-055BA1C6874E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FD462B-D79E-1473-6236-C12DB834BFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FD462B-D79E-1473-6236-C12DB834BFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FD462B-D79E-1473-6236-C12DB834BFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FD462B-D79E-1473-6236-C12DB834BFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
