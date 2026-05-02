@@ -113,7 +113,7 @@ namespace SwiftShop.Areas.Customer.Controllers
 
             shoppingCartVM.ShoppingCartList = _unitofwork.ShoppingCartRepository
           .GetAll(u => u.ApplicationUserId == userid, includeProperties: "product");
-            shoppingCartVM.OrderHeader.OderDate = System.DateTime.Now;
+            shoppingCartVM.OrderHeader.OderDate = DateTime.UtcNow;
             shoppingCartVM.OrderHeader.ApplicationUserId = userid;
             //to not populate the navigation property
             ApplicationUser applicationuser = _unitofwork.ApplicationUserRepository.Getbyid(u => u.Id == userid);
@@ -154,7 +154,7 @@ namespace SwiftShop.Areas.Customer.Controllers
             if (applicationuser.CompanyID.GetValueOrDefault() == 0)
             {
 
-                var domain = "https://localhost:7193/";
+                var domain = $"{Request.Scheme}://{Request.Host}/";
 
                 var options = new Stripe.Checkout.SessionCreateOptions
                 {

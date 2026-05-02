@@ -101,10 +101,10 @@ namespace SwiftShop.Areas.Admin.Controllers
             orderHeader.TrackingOrder = orderVM.OrderHeader.TrackingOrder;
             orderHeader.Courier = orderVM.OrderHeader.Courier;
             orderHeader.OrderStatus = SD.Status_Shipped;
-            orderHeader.ShippingDate = DateTime.Now;
+            orderHeader.ShippingDate = DateTime.UtcNow;
             if (orderHeader.PaymentStatus == SD.PaymentStatus_DelayedPayment)
             {
-                orderHeader.PaymentDueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(30));
+                orderHeader.PaymentDueDate = DateOnly.FromDateTime(DateTime.UtcNow.AddDays(30));
             }
             _unitofWork.OrderHeaderRepository.Update(orderHeader);
             _unitofWork.save();
