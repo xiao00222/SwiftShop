@@ -146,7 +146,7 @@ namespace SwiftShop.Areas.Admin.Controllers
                 (u => u.Id == orderVM.OrderHeader.Id, includeProperties: "ApplicationUser");
             orderVM.OrderDetails = _unitofWork.OrderDetailsRepository.GetAll
                (u => u.OrderHeaderId == orderVM.OrderHeader.Id, includeProperties: "Product");
-            var domain = "https://localhost:7193/";
+            var domain = $"{Request.Scheme}://{Request.Host}/";
             var options = new Stripe.Checkout.SessionCreateOptions
             {
                 SuccessUrl = domain + $"admin/order/PaymentConfirmation?orderHeaderId={orderVM.OrderHeader.Id}",
